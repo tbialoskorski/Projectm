@@ -11,7 +11,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { font-family: 'DM Mono', monospace; background: #f5f2ec; color: #0f0f0e; font-size: 13px; line-height: 1.7; overflow-x: hidden; }
-  nav { position: fixed; top: 0; left: 0; right: 0; z--index: 100; display: flex; align-items: center; justify-content: space-between; padding: 22px 48px; border-bottom: 1px solid transparent; transition: border-color 0.4s, background 0.4s; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 22px 48px; border-bottom: 1px solid transparent; transition: border-color 0.4s, background 0.4s; }
   nav.scrolled { background: #f5f2ec; border-color: #dcd8d0; }
   .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #0f0f0e; text-decoration: none; }
   .nav-logo span { color: #b07d50; }
@@ -33,7 +33,7 @@
   .hero-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 500; color: #fdfbf8; line-height: 1; margin-bottom: 4px; }
   .hero-stat-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(253,251,248,0.4); }
   .hero-right { background: #f2e8d9; position: relative; overflow: hidden; display: flex; align-items: stretch; }
-  .hero-right svg { width: 100%; height: 100%; display: block; min-height: 100vh; }
+  .hero-right svg { width: 100%; height: 100%; display: block; }
   .hero-scroll-hint { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; color: rgba(245,242,236,0.25); font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; z-index: 10; animation: bounce 2.5s ease-in-out infinite; }
   .hero-scroll-hint::after { content: ''; display: block; width: 1px; height: 40px; background: currentColor; }
   @keyframes bounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(6px); } }
